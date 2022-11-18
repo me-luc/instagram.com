@@ -1,0 +1,295 @@
+body {
+	background-color: #fafafa;
+}
+
+img:hover {
+	cursor: pointer;
+}
+
+.topo {
+	background-color: #ffffff;
+	width: 100%;
+	height: 55px;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border: 1px solid #dbdbdb;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.barra-inferior {
+	width: 100%;
+	height: 60px;
+	background-color: white;
+
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	display: none;
+
+	padding: 21px;
+	box-sizing: border-box;
+}
+
+.container-conteudo {
+	display: flex;
+	margin-top: 55px;
+	margin-left: 250px;
+}
+
+.campo-texto::placeholder {
+	color: #979797;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	border-radius: 3px;
+}
+
+.sidebar {
+	width: 293px;
+	height: 100px;
+
+	margin-left: 15px;
+	margin-top: 57px;
+
+	position: fixed;
+	top: 60px;
+	left: 878px;
+}
+.my-profile,
+.profile {
+	display: flex;
+	align-items: center;
+}
+.my-profile img {
+	width: 56px;
+	height: 56px;
+	border-radius: 28px;
+}
+.profile img {
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+}
+.profile-info {
+	margin-left: 17px;
+}
+.sidebar h2,
+h3 {
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 13px;
+	color: #c7c7c7;
+}
+.sidebar h2 {
+	margin-top: 33px;
+	margin-bottom: 18px;
+}
+.follow {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	color: #139ef2;
+	text-align: right;
+}
+.caixa-profile {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.sidebar h1 {
+	flex-flow: row wrap;
+}
+
+/* STORIES */
+.arrow {
+	z-index: 1;
+	position: absolute;
+	top: 46px;
+	left: 579px;
+	filter: drop-shadow(0px 4px 2px gray);
+}
+.caixa-stories {
+	height: 118px;
+	margin-top: 34px;
+	margin-bottom: 24px;
+	display: flex;
+
+	box-sizing: border-box;
+	padding: 18px 0 0 17px;
+	overflow: hidden;
+
+	position: relative;
+}
+.post,
+.caixa-stories,
+.barra-inferior {
+	background: #ffffff;
+	border: 1px solid #dbdbdb;
+	border-radius: 3px;
+}
+.story {
+	position: relative;
+	margin-right: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.story p {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	color: #262626;
+}
+.story-foto {
+	width: 56px;
+	height: 56px;
+	border-radius: 28px;
+	position: absolute;
+	top: 5.3px;
+	left: 5.2px;
+}
+
+/*-- FEED --*/
+.photo {
+	width: 100%;
+}
+.feed {
+	width: 614px;
+}
+.post {
+	margin-bottom: 60px;
+}
+.user-foto {
+	width: 32px;
+	height: 32px;
+	margin-right: 15px;
+	border-radius: 16px;
+}
+.topo-post {
+	height: 61px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+}
+.rodape-post {
+	padding: 13px 17px;
+	box-sizing: border-box;
+}
+.rodape-post span {
+	font-weight: 500;
+}
+.actions-post {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.actions-left .icon {
+	margin-right: 17px;
+}
+.post-likes {
+	display: flex;
+	align-items: center;
+}
+.post-likes p {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+	color: #000000;
+}
+.post-likes img {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	border-radius: 10px;
+}
+
+.usuario {
+	display: flex;
+	align-items: center;
+}
+.suggestion {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 24px;
+	margin-bottom: 17px;
+}
+.suggest {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	color: #8e8e8e;
+}
+.ver-tudo {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+}
+.username {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+}
+.follows-you {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	color: #8e8e8e;
+}
+
+.icon {
+	font-size: 23px;
+}
+
+.logo {
+	height: 28px;
+	margin-top: 15px;
+}
+
+.logo-hide {
+	display: none;
+}
+
+.borda-menu {
+	background-color: #dbdbdb;
+	width: 1px;
+	height: 22px;
+}
+
+.bloco-direita .icon {
+	margin-right: 22.75px;
+}
+
+.bloco-esquerda .icon,
+.logo {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.bloco-esquerda .icon {
+	margin-top: 2px;
+}
+
+.bloco-esquerda .logo {
+	margin-top: 12px;
+}
+
+.bloco-esquerda,
+.bloco-direita {
+	display: flex;
+	align-items: center;
+}
