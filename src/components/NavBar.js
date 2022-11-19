@@ -19,7 +19,7 @@ export default function Navbar() {
 				<a href="https://www.google.com/search?q=image&source=lnms&tbm=isch&sa=X&ved=2ahUKEwixxJnIkrT7AhVSr5UCHdcjCqYQ_AUoAXoECAEQAw&biw=500&bih=973&dpr=1#imgrc=JoR7JNzGko0S6M">
 					<img
 						className="logo"
-						src="imagens/logo.png"
+						src="../imagens/logo.png"
 						alt="logo do instagram"
 					/>
 				</a>
