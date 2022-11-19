@@ -1,45 +1,88 @@
 //VARIAVEL COM POSTS
+
 const feedPosts = [
 	{
 		user: "meowed",
 		userPhoto: "meowed.png",
 		postImage: "gato-telefone.png",
-		friendLikes: "respondeai",
 		likesNumber: 101523,
 	},
 	{
 		user: "omarapollo",
 		userPhoto: "perfil-omar.png",
 		postImage: "post-omar.jpg",
-		friendLikes: "reiberto",
 		likesNumber: 701011,
 	},
 	{
 		user: "houseofthedragon",
 		userPhoto: "perfil-hotd.jpg",
 		postImage: "post-hotd.webp",
-		friendLikes: "whyangela",
 		likesNumber: 101523,
 	},
 	{
 		user: "saquinhodelixo",
 		userPhoto: "perfil-saquinho.jpg",
 		postImage: "post-saquinho.jpg",
-		friendLikes: "luannef",
 		likesNumber: 101523,
 	},
 	{
 		user: "filomoderna",
 		userPhoto: "perfil-filo.jpg",
 		postImage: "post-filo.jpg",
-		friendLikes: "respondeai",
 		likesNumber: 101523,
 	},
 	{
-		user: "badbunny",
-		userPhoto: "perfil-badbunny.webp",
-		postImage: "post-badbunny.webp",
-		friendLikes: "patricsouz",
+		user: "nasa",
+		userPhoto: "perfil-nasa.jpg",
+		postImage: "post-nasa.png",
+		likesNumber: 101523,
+	},
+	{
+		user: "lofigil",
+		userPhoto: "perfil-lofigirl.jpg",
+		postImage: "post-lofigirl.jpg",
+		likesNumber: 101523,
+	},
+	{
+		user: "leagueoflegends",
+		userPhoto: "perfil-lol.jpg",
+		postImage: "post-lol.webp",
+		likesNumber: 101523,
+	},
+	{
+		user: "digitalart",
+		userPhoto: "perfil-digitalart.jpg",
+		postImage: "post-digitalart.jpg",
+		likesNumber: 101523,
+	},
+	{
+		user: "cbf",
+		userPhoto: "perfil-cbf.jpg",
+		postImage: "post-cbf.jpg",
+		likesNumber: 101523,
+	},
+	{
+		user: "g1",
+		userPhoto: "perfil-g1.png",
+		postImage: "post-g1.webp",
+		likesNumber: 101523,
+	},
+	{
+		user: "marvel",
+		userPhoto: "perfil-marvel.jpg",
+		postImage: "post-marvel.webp",
+		likesNumber: 101523,
+	},
+	{
+		user: "cutedogseveryday",
+		userPhoto: "perfil-cutedogs.jpeg",
+		postImage: "post-cutedogs.png",
+		likesNumber: 101523,
+	},
+	{
+		user: "studioghibli",
+		userPhoto: "perfil-studioghibli.jpg",
+		postImage: "post-studioghibli.jpg",
 		likesNumber: 101523,
 	},
 ];
