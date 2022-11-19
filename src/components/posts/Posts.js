@@ -1,20 +1,15 @@
-import feedPosts from "../../data";
+import feedPosts from "../../data.js";
 
 const NTOBEDISPLAYED = 7;
 const allPosts = feedPosts.feedPosts;
 let postsToBeDisplayed = [];
-
-console.log(allPosts);
-console.log("length ", allPosts.length);
 
 //MONTANDO NOVO ARRAY QUE IRA MOSTRAR N POSTS ALEATORIOS
 while (postsToBeDisplayed.length < NTOBEDISPLAYED) {
 	const newPost = allPosts[Math.floor(Math.random() * allPosts.length)];
 	if (!postsToBeDisplayed.includes(newPost)) {
 		postsToBeDisplayed.push(newPost);
-		console.log("hi");
 	}
-	console.log("hi");
 }
 
 console.log("posts to be displayed", postsToBeDisplayed);

@@ -39,7 +39,7 @@ img:hover {
 .container-conteudo {
 	display: flex;
 	margin-top: 55px;
-	margin-left: 250px;
+	justify-content: center;
 }
 
 .campo-texto::placeholder {
@@ -60,9 +60,12 @@ img:hover {
 	margin-left: 15px;
 	margin-top: 57px;
 
-	position: fixed;
+	/*position: fixed;
 	top: 60px;
-	left: 878px;
+	left: 878px;*/
+}
+.my-profile {
+	position: relative;
 }
 .my-profile,
 .profile {
@@ -73,11 +76,13 @@ img:hover {
 	width: 56px;
 	height: 56px;
 	border-radius: 28px;
+	object-fit: cover;
 }
 .profile img {
 	width: 32px;
 	height: 32px;
 	border-radius: 16px;
+	object-fit: cover;
 }
 .profile-info {
 	margin-left: 17px;
@@ -158,6 +163,7 @@ h3 {
 	position: absolute;
 	top: 5.3px;
 	left: 5.2px;
+	object-fit: cover;
 }
 
 /*-- FEED --*/
@@ -175,6 +181,7 @@ h3 {
 	height: 32px;
 	margin-right: 15px;
 	border-radius: 16px;
+	object-fit: cover;
 }
 .topo-post {
 	height: 61px;
@@ -216,6 +223,7 @@ h3 {
 	height: 20px;
 	margin-right: 10px;
 	border-radius: 10px;
+	object-fit: cover;
 }
 
 .usuario {
@@ -292,4 +300,17 @@ h3 {
 .bloco-direita {
 	display: flex;
 	align-items: center;
+}
+
+#edit:hover {
+	cursor: pointer;
+}
+
+ion-icon {
+	font-size: 20px;
+}
+
+.my-profile ion-icon {
+	position: absolute;
+	right: 0;
 }

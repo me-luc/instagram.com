@@ -125,6 +125,45 @@ const users = [
 		user: "arianag",
 		photo: "story-ariana.jpg",
 	},
+	{
+		user: "9gag",
+		photo: "story-9gag.png",
+	},
+	{
+		user: "cristiano",
+		photo: "story-cristiano.jpg",
+	},
+	{
+		user: "instagram",
+		photo: "story-instagram.jpeg",
+	},
+	{
+		user: "messi",
+		photo: "story-messi.webp",
+	},
+	{
+		user: "natgeo",
+		photo: "story-natgeo.jpg",
+	},
+	{
+		user: "nike",
+		photo: "story-nike.jpg",
+	},
+	{
+		user: "therock",
+		photo: "story-therock.jpeg",
+	},
+	{
+		user: "zendaya",
+		photo: "story-zendaya.webp",
+	},
+	/*/ MODELO
+	{
+		user: "user",
+		photo: "story-user.jpg",
+	},*/
 ];
 
-export default { feedPosts, users };
+const suggestedUsers = [{}];
+
+export default { feedPosts, users, suggestedUsers };

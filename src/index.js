@@ -9,3 +9,7 @@ root.render(
 		<App />
 	</React.StrictMode>
 );
+
+window.onbeforeunload = function () {
+	window.scrollTo(0, 0);
+};
