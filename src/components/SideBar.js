@@ -1,4 +1,4 @@
-import MyUser from "./MyUser";
+import MyUser from "./user/MyUser";
 import Sugestions from "./Sugestions";
 
 export default function SideBar() {

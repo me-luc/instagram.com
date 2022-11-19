@@ -66,6 +66,7 @@ img:hover {
 }
 .my-profile {
 	position: relative;
+	margin-bottom: 30px;
 }
 .my-profile,
 .profile {
@@ -272,6 +273,10 @@ h3 {
 	display: none;
 }
 
+#hide {
+	display: none;
+}
+
 .borda-menu {
 	background-color: #dbdbdb;
 	width: 1px;
@@ -313,4 +318,17 @@ ion-icon {
 .my-profile ion-icon {
 	position: absolute;
 	right: 0;
+}
+
+.square-form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.square-form input {
+	margin-bottom: 10px;
+	height: 25px;
+	text-align: center;
 }
