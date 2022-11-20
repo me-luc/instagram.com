@@ -1,31 +1,34 @@
 export default function Navbar() {
+	function refresh() {
+		window.location.reload();
+	}
 	return (
 		<div className="topo">
 			<div className="bloco-esquerda">
-				<a href="https://www.google.com/search?q=image&source=lnms&tbm=isch&sa=X&ved=2ahUKEwixxJnIkrT7AhVSr5UCHdcjCqYQ_AUoAXoECAEQAw&biw=500&bih=973&dpr=1#imgrc=JoR7JNzGko0S6M">
-					<ion-icon className="icon" name="logo-instagram"></ion-icon>
-				</a>
-				<div className="borda-menu hide"></div>
-				<a href="https://www.google.com/search?q=image&source=lnms&tbm=isch&sa=X&ved=2ahUKEwixxJnIkrT7AhVSr5UCHdcjCqYQ_AUoAXoECAEQAw&biw=500&bih=973&dpr=1#imgrc=JoR7JNzGko0S6M">
-					<img
-						className="logo hide"
-						src={require("../imagens/logo.png")}
-						alt="logo do instagram"
-					/>
-				</a>
+				<ion-icon
+					className="icon"
+					name="logo-instagram"
+					onClick={refresh}></ion-icon>
+				<div className="borda-menu " id="hided"></div>
+				<img
+					onClick={refresh}
+					className="logo"
+					id="hided"
+					src={require(`../imagens/logo.png`)}
+					alt="logo do instagram"
+				/>
 			</div>
 
 			<div className="logo-hide">
-				<a href="https://www.google.com/search?q=image&source=lnms&tbm=isch&sa=X&ved=2ahUKEwixxJnIkrT7AhVSr5UCHdcjCqYQ_AUoAXoECAEQAw&biw=500&bih=973&dpr=1#imgrc=JoR7JNzGko0S6M">
-					<img
-						className="logo"
-						src="../imagens/logo.png"
-						alt="logo do instagram"
-					/>
-				</a>
+				<img
+					onClick={refresh}
+					className="logo"
+					src={require(`../imagens/logo.png`)}
+					alt="logo do instagram"
+				/>
 			</div>
 
-			<div className="bloco-centro hide">
+			<div className="bloco-centro " id="hided">
 				<input
 					className="campo-texto"
 					placeholder="Pesquisar"
@@ -34,26 +37,21 @@ export default function Navbar() {
 			</div>
 
 			<div className="bloco-direita">
-				<a href="https://www.google.com/search?q=image&source=lnms&tbm=isch&sa=X&ved=2ahUKEwixxJnIkrT7AhVSr5UCHdcjCqYQ_AUoAXoECAEQAw&biw=500&bih=973&dpr=1#imgrc=JoR7JNzGko0S6M">
-					<ion-icon
-						className="icon"
-						name="paper-plane-outline"></ion-icon>
-				</a>
-				<a href="https://www.google.com/search?q=image&source=lnms&tbm=isch&sa=X&ved=2ahUKEwixxJnIkrT7AhVSr5UCHdcjCqYQ_AUoAXoECAEQAw&biw=500&bih=973&dpr=1#imgrc=JoR7JNzGko0S6M">
-					<ion-icon
-						className="icon hide"
-						name="compass-outline"></ion-icon>
-				</a>
-				<a href="https://www.google.com/search?q=image&source=lnms&tbm=isch&sa=X&ved=2ahUKEwixxJnIkrT7AhVSr5UCHdcjCqYQ_AUoAXoECAEQAw&biw=500&bih=973&dpr=1#imgrc=JoR7JNzGko0S6M">
-					<ion-icon
-						className="icon hide"
-						name="heart-outline"></ion-icon>
-				</a>
-				<a href="https://www.google.com/search?q=image&source=lnms&tbm=isch&sa=X&ved=2ahUKEwixxJnIkrT7AhVSr5UCHdcjCqYQ_AUoAXoECAEQAw&biw=500&bih=973&dpr=1#imgrc=JoR7JNzGko0S6M">
-					<ion-icon
-						className="icon hide"
-						name="person-outline"></ion-icon>
-				</a>
+				<ion-icon
+					className="icon"
+					name="paper-plane-outline"></ion-icon>
+				<ion-icon
+					className="icon "
+					id="hided"
+					name="compass-outline"></ion-icon>
+				<ion-icon
+					className="icon "
+					id="hided"
+					name="heart-outline"></ion-icon>
+				<ion-icon
+					className="icon "
+					id="hided"
+					name="person-outline"></ion-icon>
 			</div>
 			{/* <!-- FIM DIV TOPO --> */}
 		</div>

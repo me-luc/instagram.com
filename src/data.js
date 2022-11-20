@@ -85,6 +85,12 @@ const feedPosts = [
 		postImage: "post-studioghibli.jpg",
 		likesNumber: 101523,
 	},
+	{
+		user: "docesbb",
+		userPhoto: "perfil-doces.jpg",
+		postImage: "post-doces.jpg",
+		likesNumber: 101523,
+	},
 ];
 
 //VARIAVEL COM USUARIOS
@@ -164,6 +170,104 @@ const users = [
 	},*/
 ];
 
-const suggestedUsers = [{}];
+//VARIAVEL COM USUARIOS
+const usersLikes = [
+	{
+		user: "tamino",
+		photo: "story-tamino.jpg",
+	},
+	{
+		user: "kendrick",
+		photo: "story-kendrick.jpg",
+	},
+	{
+		user: "straykids",
+		photo: "story-straykids.jpg",
+	},
+	{
+		user: "nfrealmusic",
+		photo: "story-nf.jpg",
+	},
+	{
+		user: "taylorswift",
+		photo: "story-swift.webp",
+	},
+	{
+		user: "bts",
+		photo: "story-bts.jpg",
+	},
+	{
+		user: "tøp",
+		photo: "story-top.jpg",
+	},
+	{
+		user: "beyonce",
+		photo: "story-beyonce.webp",
+	},
+	{
+		user: "arianag",
+		photo: "story-ariana.jpg",
+	},
+	{
+		user: "9gag",
+		photo: "story-9gag.png",
+	},
+	{
+		user: "cristiano",
+		photo: "story-cristiano.jpg",
+	},
+	{
+		user: "instagram",
+		photo: "story-instagram.jpeg",
+	},
+	{
+		user: "messi",
+		photo: "story-messi.webp",
+	},
+	{
+		user: "natgeo",
+		photo: "story-natgeo.jpg",
+	},
+	{
+		user: "nike",
+		photo: "story-nike.jpg",
+	},
+	{
+		user: "therock",
+		photo: "story-therock.jpeg",
+	},
+	{
+		user: "zendaya",
+		photo: "story-zendaya.webp",
+	},
+	{
+		user: "roberto",
+		photo: "perfil-fake1.webp",
+	},
+	{
+		user: "roberto",
+		photo: "perfil-fake2.jpeg",
+	},
+	{
+		user: "roberto",
+		photo: "perfil-fake6.jpg",
+	},
+	{
+		user: "roberto",
+		photo: "perfil-fake9.webp",
+	},
+	/*/ MODELO
+	{
+		user: "user",
+		photo: "story-user.jpg",
+	},*/
+];
 
-export default { feedPosts, users, suggestedUsers };
+const suggestedUsers = [
+	{
+		user: "roberto",
+		photo: "story-user.jpg",
+	},
+];
+
+export default { feedPosts, users, usersLikes, suggestedUsers };

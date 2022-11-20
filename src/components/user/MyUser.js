@@ -33,24 +33,33 @@ export default function MyUser() {
 	}
 	return (
 		<>
-			<div className="my-profile">
-				<img src={`${img}`} alt="foto de usuario" onClick={showPage} />
+			<div className="my-profile" data-test="user">
+				<img
+					src={`${img}`}
+					data-test="profile-image"
+					alt="foto de usuario"
+					onClick={showPage}
+				/>
 				<div className="profile-info">
 					<h1 className="username" onClick={showPage}>
 						{user}
 					</h1>
-					<h1 className="follows-you" onClick={showPage}>
+					<h1
+						className="follows-you"
+						data-test="name"
+						onClick={showPage}>
 						{name}
 					</h1>
 				</div>
 				<ion-icon
 					onClick={showPage}
 					id="edit"
+					data-test="edit-name"
 					name="create-outline"></ion-icon>
 			</div>
 
 			{/*editar usuario */}
-			<div class="square-form" id={visibility}>
+			<div className="square-form" id={visibility}>
 				<input
 					className="campo-texto"
 					onChange={(e) => (newImg = e.target.value)}
