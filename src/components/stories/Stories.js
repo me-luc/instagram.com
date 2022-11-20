@@ -1,4 +1,5 @@
 import users from "../../data";
+import Story from "./Story";
 
 const NTOBEDISPLAYED = 8;
 const allUsers = users.users;
@@ -7,9 +8,11 @@ let storiesToBeDisplayed = [];
 
 //MONTANDO NOVO ARRAY QUE IRA MOSTRAR N STORIES ALEATORIOS
 while (storiesToBeDisplayed.length < NTOBEDISPLAYED) {
-	const newStory = allUsers[Math.floor(Math.random() * allUsers.length)];
+	let i = Math.floor(Math.random() * allUsers.length);
+	const newStory = allUsers[i];
 	if (!storiesToBeDisplayed.includes(newStory)) {
 		storiesToBeDisplayed.push(newStory);
+		users.users[i].following = true;
 	}
 }
 
@@ -20,26 +23,6 @@ export default function Stories() {
 			{storiesToBeDisplayed.map((story) => (
 				<Story user={story.user} photo={story.photo} />
 			))}
-		</div>
-	);
-}
-
-function Story(props) {
-	return (
-		/* <!-- STORY --> */
-		<div className="story">
-			<div className="background-img">
-				<img
-					src={require("../../imagens/stories_background.png")}
-					alt="foto de usuario"
-				/>
-			</div>
-			<img
-				className="story-foto"
-				src={require(`../../imagens/${props.photo}`)}
-				alt="foto de usuario"
-			/>
-			<p>{props.user}</p>
 		</div>
 	);
 }

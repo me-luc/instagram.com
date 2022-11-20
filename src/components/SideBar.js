@@ -1,5 +1,5 @@
 import MyUser from "./user/MyUser";
-import Sugestions from "./Sugestions";
+import Sugestions from "./sugestions/Sugestions";
 
 export default function SideBar() {
 	return (

@@ -94,167 +94,162 @@ const feedPosts = [
 ];
 
 //VARIAVEL COM USUARIOS
-const users = [
+let users = [
 	{
 		user: "tamino",
+		name: "Tamino",
+		following: false,
 		photo: "story-tamino.jpg",
 	},
 	{
 		user: "kendrick",
+		name: "Kendrick Lamar",
+		following: false,
 		photo: "story-kendrick.jpg",
 	},
 	{
 		user: "straykids",
+		name: "Stray Kids",
+		following: false,
 		photo: "story-straykids.jpg",
 	},
 	{
 		user: "nfrealmusic",
+		name: "NF",
+		following: false,
 		photo: "story-nf.jpg",
 	},
 	{
 		user: "taylorswift",
+		name: "Taylor Swift",
+		following: false,
 		photo: "story-swift.webp",
 	},
 	{
 		user: "bts",
+		name: "BTS",
+		following: false,
 		photo: "story-bts.jpg",
 	},
 	{
 		user: "tøp",
+		name: "Twenty One Pilots",
+		following: false,
 		photo: "story-top.jpg",
 	},
 	{
 		user: "beyonce",
+		name: "Beyoncé",
+		following: false,
 		photo: "story-beyonce.webp",
 	},
 	{
 		user: "arianag",
+		name: "Ariana Grande",
+		following: false,
 		photo: "story-ariana.jpg",
 	},
 	{
 		user: "9gag",
+		name: "9gag",
+		following: false,
 		photo: "story-9gag.png",
 	},
 	{
 		user: "cristiano",
+		name: "Cristiano Ronaldo",
+		following: false,
 		photo: "story-cristiano.jpg",
 	},
 	{
 		user: "instagram",
+		name: "Instagram",
+		following: false,
 		photo: "story-instagram.jpeg",
 	},
 	{
 		user: "messi",
+		name: "Messi",
+		following: false,
 		photo: "story-messi.webp",
 	},
 	{
 		user: "natgeo",
+		name: "National Geographics",
+		following: false,
 		photo: "story-natgeo.jpg",
 	},
 	{
 		user: "nike",
+		name: "NIKE",
+		following: false,
 		photo: "story-nike.jpg",
 	},
 	{
 		user: "therock",
+		name: "Dwayne Jhonson",
+		following: false,
 		photo: "story-therock.jpeg",
 	},
 	{
 		user: "zendaya",
-		photo: "story-zendaya.webp",
-	},
-	/*/ MODELO
-	{
-		user: "user",
-		photo: "story-user.jpg",
-	},*/
-];
-
-//VARIAVEL COM USUARIOS
-const usersLikes = [
-	{
-		user: "tamino",
-		photo: "story-tamino.jpg",
-	},
-	{
-		user: "kendrick",
-		photo: "story-kendrick.jpg",
-	},
-	{
-		user: "straykids",
-		photo: "story-straykids.jpg",
-	},
-	{
-		user: "nfrealmusic",
-		photo: "story-nf.jpg",
-	},
-	{
-		user: "taylorswift",
-		photo: "story-swift.webp",
-	},
-	{
-		user: "bts",
-		photo: "story-bts.jpg",
-	},
-	{
-		user: "tøp",
-		photo: "story-top.jpg",
-	},
-	{
-		user: "beyonce",
-		photo: "story-beyonce.webp",
-	},
-	{
-		user: "arianag",
-		photo: "story-ariana.jpg",
-	},
-	{
-		user: "9gag",
-		photo: "story-9gag.png",
-	},
-	{
-		user: "cristiano",
-		photo: "story-cristiano.jpg",
-	},
-	{
-		user: "instagram",
-		photo: "story-instagram.jpeg",
-	},
-	{
-		user: "messi",
-		photo: "story-messi.webp",
-	},
-	{
-		user: "natgeo",
-		photo: "story-natgeo.jpg",
-	},
-	{
-		user: "nike",
-		photo: "story-nike.jpg",
-	},
-	{
-		user: "therock",
-		photo: "story-therock.jpeg",
-	},
-	{
-		user: "zendaya",
+		name: "Zendaya",
+		following: false,
 		photo: "story-zendaya.webp",
 	},
 	{
 		user: "roberto",
-		photo: "perfil-fake1.webp",
+		name: "Roberto Cruz",
+		following: false,
+		photo: "perfil-fake1.jpg",
 	},
 	{
-		user: "roberto",
+		user: "jjuujju",
+		name: "Juli Rep",
+		following: false,
 		photo: "perfil-fake2.jpeg",
 	},
 	{
-		user: "roberto",
+		user: "rtab",
+		name: "Rafa Linhares",
+		following: false,
 		photo: "perfil-fake6.jpg",
 	},
 	{
-		user: "roberto",
+		user: "tom",
+		name: "Tom Cruice",
+		following: false,
 		photo: "perfil-fake9.webp",
+	},
+	{
+		user: "ladygaga",
+		name: "Lady Gaga",
+		following: false,
+		photo: "perfil-fake3.jpg",
+	},
+	{
+		user: "joji",
+		name: "Joji",
+		following: false,
+		photo: "perfil-fake4.webp",
+	},
+	{
+		user: "jaden",
+		name: "Jaden Smith",
+		following: false,
+		photo: "perfil-fake8.png",
+	},
+	{
+		user: "sza",
+		name: "SZA",
+		following: false,
+		photo: "perfil-fake10.jpg",
+	},
+	{
+		user: "declan",
+		name: "Declan Mckenna",
+		following: false,
+		photo: "perfil-fake11.jpg",
 	},
 	/*/ MODELO
 	{
@@ -263,11 +258,4 @@ const usersLikes = [
 	},*/
 ];
 
-const suggestedUsers = [
-	{
-		user: "roberto",
-		photo: "story-user.jpg",
-	},
-];
-
-export default { feedPosts, users, usersLikes, suggestedUsers };
+export default { feedPosts, users };

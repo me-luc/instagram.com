@@ -1,19 +1,21 @@
 import feedPosts from "../../data.js";
 import { useState } from "react";
-const allUsers = feedPosts.users;
+
+const userLikes = feedPosts.users;
 
 export default function Post(props) {
 	const [liked, setLiked] = useState(false);
 	const [saved, setSaved] = useState(false);
 	const [likeCount, setLikeCount] = useState(props.likesNumber);
+	const [dblLike, setDbllike] = useState("hide");
 
+	//BUSCANDO INFO DO FRIEND QUE CURTIU POSTAGEM
 	function findUser(user) {
 		if (user.user === props.friendLikes) {
-			return user;
+			return true;
 		}
 	}
-	const randomUserPhoto = allUsers.filter(findUser)[0].photo;
-	console.log("RANDOM USER AFTER ", randomUserPhoto);
+	const randomUserPhoto = userLikes.filter(findUser)[0].photo;
 
 	function likePost() {
 		if (liked) {
@@ -28,6 +30,12 @@ export default function Post(props) {
 	}
 
 	function doubleLike() {
+		//animation
+		setDbllike("");
+
+		setTimeout(function () {
+			setDbllike("hide");
+		}, 800);
 		if (!liked) {
 			let count = likeCount + 1;
 			setLikeCount(count);
@@ -59,13 +67,20 @@ export default function Post(props) {
 					className="icon"
 					name="ellipsis-horizontal"></ion-icon>
 			</div>
-			<img
-				data-test="post-image"
-				className="photo"
-				src={require(`../../imagens/${props.postImage}`)}
-				alt="foto"
-				onDoubleClick={doubleLike}
-			/>
+			<div className="image-box">
+				<img
+					data-test="post-image"
+					className="photo"
+					src={require(`../../imagens/${props.postImage}`)}
+					alt="foto"
+					onDoubleClick={doubleLike}
+				/>
+				<div
+					className={dblLike == "hide" ? "" : "like-animation"}
+					id={dblLike}>
+					<ion-icon id="" name="heart"></ion-icon>
+				</div>
+			</div>
 
 			{/* <!-- RODAPE DO POST --> */}
 			<div className="rodape-post">

@@ -1,25 +1,25 @@
-import feedPosts from "../../data.js";
+import data from "../../data.js";
 import Post from "./Post.js";
 
 const NTOBEDISPLAYED = 7;
-const allPosts = feedPosts.feedPosts;
-const allUsers = feedPosts.users;
+const allPosts = data.feedPosts;
 let postsToBeDisplayed = [];
-const userLikes = feedPosts.usersLikes;
+const userLikes = data.users;
 
 //MONTANDO NOVO ARRAY QUE IRA MOSTRAR N POSTS ALEATORIOS
 while (postsToBeDisplayed.length < NTOBEDISPLAYED) {
-	const newPost = allPosts[Math.floor(Math.random() * allPosts.length)];
+	let i = Math.floor(Math.random() * allPosts.length);
+	const newPost = allPosts[i];
 	if (!postsToBeDisplayed.includes(newPost)) {
 		postsToBeDisplayed.push(newPost);
 	}
 }
 
-console.log("posts to be displayed", postsToBeDisplayed);
-
 export default function Posts() {
 	function getRandomUser() {
-		const newUser = userLikes[Math.floor(Math.random() * userLikes.length)];
+		let i = Math.floor(Math.random() * userLikes.length);
+		const newUser = userLikes[i];
+		data.users[i].following = true;
 		return newUser;
 	}
 	return (
