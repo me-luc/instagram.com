@@ -12,6 +12,20 @@ export default function MyUser() {
 	function showPage() {
 		setVisibility("");
 	}
+	
+	function changeName() {
+		newName = prompt("digite novo nome!");
+		if(newName) {
+			setName(newName);
+		}
+	}
+	
+	function changePhoto() {
+		newImg = prompt("digite like para sua foto!");
+		if(newImg) {
+			setImg(newImg);
+		}
+	}
 
 	function save() {
 		if (newName) {
@@ -38,7 +52,7 @@ export default function MyUser() {
 					src={`${img}`}
 					data-test="profile-image"
 					alt="foto de usuario"
-					onClick={showPage}
+					onClick={changePhoto}
 				/>
 				<div className="profile-info">
 					<h1 className="username" onClick={showPage}>
@@ -52,7 +66,7 @@ export default function MyUser() {
 					</h1>
 				</div>
 				<ion-icon
-					onClick={showPage}
+					onClick={changeName}
 					id="edit"
 					data-test="edit-name"
 					name="create-outline"></ion-icon>
